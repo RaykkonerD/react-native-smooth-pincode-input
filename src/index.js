@@ -6,7 +6,6 @@ import {
   TextInput,
   StyleSheet,
   I18nManager,
-  ViewPropTypes,
 } from 'react-native';
 import * as Animatable from 'react-native-animatable';
 
@@ -286,11 +285,11 @@ SmoothPinCodeInput.propTypes = {
 
   restrictToNumbers: PropTypes.bool,
 
-  containerStyle: ViewPropTypes.style,
+  containerStyle: PropTypes.object,
 
-  cellStyle: ViewPropTypes.style,
-  cellStyleFocused: ViewPropTypes.style,
-  cellStyleFilled: ViewPropTypes.style,
+  cellStyle: PropTypes.object,
+  cellStyleFocused: PropTypes.object,
+  cellStyleFilled: PropTypes.object,
 
   textStyle: Text.propTypes.style,
   textStyleFocused: Text.propTypes.style,
